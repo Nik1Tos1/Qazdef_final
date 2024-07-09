@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width:1440px;
+    overflow-x: hidden;
+    font-family: "Barlow", sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 145px;
+
+}
+
+
+.header {
+    background-color: white;
+    height: 140px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+    z-index: 1;
+}
+
+.logo {
+    width: 202px;
+    height: 119px;
+    margin-top: -15px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact_us {
+    background-color: white;
+    text-decoration: none;
+    color: #0A3D91;
+    padding: 11px;
+    border: 3px solid #0A3D91;
+    font-weight: bold;
+    border-radius: 16px;
+    font-size: 17px;
+    transition: 0.8s;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+.contact_us:hover {
+    color: rgb(255, 255, 255);
+    background-color: #0A3D91;
+    border-color: white;
+    border: 3px solid white;
+}
+
+hr {
+    height: 2px;       
+    background-color: rgb(220, 220, 220);
+    position: fixed;
+    z-index:1;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*начало*/
+
+/*список сайдбара*/
+
+
+.title h1{
+    font-size:35px;
+    margin-left:120px;
+    margin-top:70px;
+    padding-bottom:30px;
+}  
+
+.title::after {
+    content: '';
+    width: 0%;
+    height:4px;
+    background: #0A3D91;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    margin-top:1px;
+    margin-left:120px;
+}
+
+.title::after {
+    width:1280px;
+}
+
+/*сайдбар*/
+/*список сайдбара*/
+
+/* Основные стили */
+.title h1 {
+    font-size: 35px;
+    margin-left: 120px;
+    margin-top: 70px;
+    padding-bottom: 30px;
+}
+
+.title::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #0A3D91;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    margin-top: 1px;
+    margin-left: 120px;
+}
+
+.title::after {
+    width: 1280px;
+}
+
+/* Сайдбар */
+.col {
+    padding-top: 50px;
+    margin-left: 120px;
+    font-size: 18px;
+    width: 25%;
+}
+
+.col ul li {
+    width: 100%;
+    height: 25%;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.col ul li a:hover {
+    color: #0A3D91;
+}
+
+ul.custom-square-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul.custom-square-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px; /* Расстояние между элементами списка */
+    line-height: 1.5; /* Соответствует высоте текста */
+}
+
+ul.custom-square-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Размер квадрата */
+    height: 10px; /* Размер квадрата */
+    background-color: #0A3D91; /* Цвет квадрата */
+    border-radius: 1px; /* Квадрат */
+}
+
+/* Подсветка только для "Обнаружители скрытых видеокамер" */
+ul.custom-square-list li:nth-child(3) a {
+    color: #0A3D91;
+}
+
+/* Конец сайдбара */
+.col .list-item {
+    font-weight: normal; /* Убираем жирность */
+}
+
+.col .list-item::before {
+    display: none; /* Убираем квадратики */
+    list-style-type: none; /* Убираем кружочки */
+}
+
+.col .list-item {
+    list-style: none; /* Убираем маркеры */
+    font-weight: normal; /* Убираем жирность */
+}
+
+/*Сам товар*/
+#products-section {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.products-container{
+    margin-top:-650px;
+}
+
+.product-card {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    margin-left:600px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+
+.product-details {
+    flex-grow: 1; 
+    padding-right: 20px; 
+}
+
+.product-image {
+    flex: 0 0 150px; 
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image img {
+    width:150%;
+    margin-left:50px;
+    height: auto;
+}
+
+.product-details{
+    margin-left:100px;
+}
+
+
+.product-title{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    font-weight: 700;
+    margin-top:-40px;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+.underline {
+    height: 4px;
+    background-color: #0A3D91;
+    margin-left:43%;
+    width:55%;
+}
+
+.product-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.price-title {
+    font-size: 20px;
+}
+
+.contact_btn {
+    margin-left: 350px;
+    margin-top: -20px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Кнопка связаться с нами*/
+
+
+
+#contactModal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    border-radius: 20px;
+    width:60%;
+    height: 80%;
+    opacity: 0; /* Скрытое состояние */
+    transition: opacity 0.5s ease; /* Плавный переход */
+}
+
+#contactModal.show {
+    display: block; /* Показываем модальное окно */
+    opacity: 1; /* Видимое состояние */
+}
+
+
+.modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding:10px;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        border-radius:20px;
+        width:60%;
+        height:80%;
+    }
+    #overlay {
+        display: none; /* Скрываем затемнение заднего фона по умолчанию */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        opacity: 0; /* Скрытое состояние */
+        transition: opacity 0.5s ease; /* Плавный переход */
+    }
+    
+    #overlay.show {
+        display: block; /* Показываем затемнение заднего фона */
+        opacity: 1; /* Видимое состояние */
+    }
+
+.fa-times{
+    color:#000000;
+    cursor: pointer;
+    margin-left:850px;
+    padding-bottom:50px;
+    width:10px;
+    margin-top:20px;
+}
+
+
+.new-contact_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    padding: 20px;
+}
+
+.new-contact_card {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.new-main_header {
+position: absolute;
+font-size:32px;
+left:35%;
+top:101px;
+}
+
+.new-main_header::after {
+    content: '';
+    display: block;
+    width:55%;
+    height: 4px;
+    background-color: #0A3D91;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.new-contact_text h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top:50px;
+    margin-left:-475px;
+    text-align: center;
+    position: relative;
+    padding-bottom:20px;
+}
+
+.new-contact_text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    margin-left:-400px;
+    margin-top:-10px;
+    text-align:center;
+    width:309px;
+    height:73px;
+    font-weight: 500;
+}
+
+.email-cart {
+    cursor: pointer;
+    color: blue;
+}
+
+.contact-logo {
+    position:absolute;
+    margin-left:30px;
+    margin-top:-130px;
+    height:20%;
+}
+/*Карточки контактов*/
+
+    .new-contact_card_info {
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+        box-shadow: none;
+    }
+
+
+    .new-contact_info_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:-10px;
+
+        padding: 20px;
+    }
+
+    .new-contact_card_info {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius:15px;
+        padding:10px 110px 25px 110px;
+        max-width:200px;
+        box-shadow:5px 10px 20px  #0A3D91;
+        margin-left:-420px;
+        margin-top:20px;
+    }
+
+    .new-main_header_info {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .new-contact_text_info h1 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .new-contact_text_info p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .new-contact_text{
+        margin-left:80px;
+    }
+
+    .new-contact_details {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        margin-top: 10px;
+    }
+
+    .new-contact_details span {
+        font-size: 16px;
+        line-height: 1.5;
+        flex-direction: column;
+    }
+
+    /*----------------------------------------*/
+
+    /*Вторая карточка*/
+
+    .new-contact_card_info2 {
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+        box-shadow: none;
+        margin-top:-90px;
+    }
+
+    .new-main_header_info2 {
+        text-align:center;
+        text-align: center;
+        position: relative;
+        margin-left:-50px;
+    }
+
+.new-contact-logo {
+        position:absolute;
+        margin-left:-10px;
+        margin-top:900px;
+        height:20%;
+    }
+
+    .new-contact_card_info2 {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius:15px;
+        padding:10px 100px 25px 100px;
+        max-width:200px;
+        box-shadow:5px 10px 20px  #0A3D91;
+        margin-left:-20px;
+    }
+
+    .new-contact_info_block2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:-9.7%;
+        margin-left:420px;
+        padding:20px;
+        padding-bottom:80px;
+    }
+
+/*ссылки на карточках*/
+a.email-link {
+    color:blue;
+    cursor:pointer;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contact_details span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a.phone-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.phone-link {
+    color:white;
+}
+/*конец*/   

@@ -1,0 +1,1352 @@
+/* Основные стили для страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    overflow-x: hidden;
+    padding-top: 145px; /* Дополнительный отступ для заголовка */
+}
+
+/* Стили для заголовка */
+.header {
+    background-color: white;
+    height: 140px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+}
+
+.logo {
+    width: 202px;
+    height: 119px;
+    margin-top: 10px; /* Поднимаем логотип ближе к верхней границе */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%; /* Оптимизированный отступ для большей гибкости */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Центрируем навигационные ссылки */
+    font-weight: bold; /* Жирный шрифт для текста */
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Расстояние между пунктами меню */
+}
+.nav-links ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px; /* Увеличенный размер шрифта */
+}
+
+
+.contact_us {
+    background-color: white;
+    text-decoration: none;
+    color: #0A3D91;
+    padding: 11px;
+    border: 3px solid #0A3D91;
+    font-weight: bold;
+    border-radius: 16px;
+    font-size: 17px;
+    transition: 0.8s;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+.contact_us:hover {
+    color: rgb(255, 255, 255);
+    background-color: #0A3D91;
+    border-color: white;
+    border: 3px solid white;
+}
+/* Полоса под заголовком */
+hr {
+    background-color: rgb(220, 220, 220);
+    height: 2px;
+    position: fixed;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/*Конец*/
+
+/*Карусель*/
+   /* Вторая секция - Карусель картинок и текст*/
+   .carusel {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carusel-img-container {
+    display: flex;
+    width: 300%; /* Ширина для трех изображений */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carusel-item {
+    width: 33.33%;  
+    flex-shrink: 0;
+    position: relative;
+}
+
+.carusel-img {
+    width: 100%;
+    height:530px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+/* начало текстовых блоков*/
+/*-------------------------------*/
+.text-box, .text-box2, .text-box3 {
+    position: absolute;
+    top: 30%;  /* Центрирование текста вертикально */
+    left: 10%; /* Центрирование текста горизонтально относительно начала элемента */
+    color: white;
+    text-align: left;
+    font-size: 27px;
+}
+
+.btn, .btn2, .btn3 {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 16px;
+    border: 3px solid white;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.btn:hover, .btn2:hover, .btn3:hover {
+    background-color: #0A3D91;
+}
+
+.language-selector select {
+    padding: 8px;
+    margin: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/*-------------------------------*/
+
+/*Конец*/
+
+.carusel-line {
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    border: none;
+    z-index: 2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.carusel-img-container {
+    transition: transform 1.4s ease; /* Увеличиваем продолжительность анимации */
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 35px;
+    z-index: 2;
+    color:transparent;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    transition:0.5s;
+}
+
+.arrow:hover{
+    color:white;
+    transition:0.5s;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+/*Конец*/
+
+
+/*секция с индикаторами*/
+/* Стили для индикаторов */
+.indicators {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+padding-bottom:30px;
+
+}
+
+.indicator {
+width: 10px;
+height: 10px;
+background-color: #ccc;
+border-radius: 50%;
+margin: 0 5px;
+margin-top:20px;
+cursor: pointer;
+padding: 2px;
+}
+
+.indicator.active {
+background-color: #555;
+}
+/*Конец*/
+
+/*Конец*/
+
+
+
+/*Конец*/
+
+/*О нас*/
+.about_comp {
+    width: 100%;
+    height: 462px;
+    background-image: linear-gradient(rgba(0, 4, 30, 0.4), rgba(0, 4, 30, 0.4)), url(/site/pictures/img_background.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about_us {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+}
+
+.about_us h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top:0px;
+    text-align: center;
+    position: relative;
+}
+
+.about_us h1::after {
+    content: '';
+    display: block;
+    width:17.5%;
+    height: 4px;
+    background-color: #0A3D91;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+.about_us p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px auto;
+    text-align:left;
+    max-width: 85%;
+    font-weight: 500;
+    
+}
+
+.about_us strong {
+    font-weight: 600;
+}
+/*Конец*/
+
+/*Продукция*/
+
+/*Заголовок*/
+.product h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding: 80px 0 40px; /* Верхний и нижний отступы */
+}
+
+.product h1::after {
+    content: '';
+    display: block;
+    width:20%; /* Ширина линии под заголовком */
+    height: 4px; /* Высота линии */
+    background-color: #0A3D91;
+    margin: 20px auto 0; /* Отступ сверху и авто-маржины для центрирования */
+}
+
+.all-products {
+    max-width: 1440px;
+    margin: 0 auto; /* Центрирование всех продуктов */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product,
+.product2,
+.product3,
+.product4 {
+    max-width: 1440px;
+}
+
+.pro-container,
+.pro-container2,
+.pro-container3,
+.pro-container4 {
+    position: relative;
+    width: 900px; /* Ширина каждого продукта */
+    height: 285px;
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px #0A3D91;
+    margin: 40px 0; /* Добавление отступов между продуктами */
+    transition: transform 0.5s ease-in-out; /* Переход для увеличения */
+}
+
+.pro-container:hover,
+.pro-container2:hover,
+.pro-container3:hover,
+.pro-container4:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.pro-container:nth-child(1) {
+    margin-left: 0;
+}
+
+.pro-container2 {
+    margin-left: 450px;
+}
+
+.pro-container3 {
+    margin-left: 0;
+}
+
+.pro-container4 {
+    margin-left: 450px;
+}
+
+.product-img,
+.product-img2,
+.product-img3,
+.product-img4 {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+}
+
+.product_text,
+.product_text2,
+.product_text3,
+.product_text4,
+.product_p_text,
+.product_p_text2,
+.product_p_text3,
+.product_p_text4,
+.learn_more,
+.learn_more2,
+.learn_more3,
+.learn_more4 {
+    position: relative;
+    margin-left: 40%; /* Отступ слева для текста, чтобы начинался с правой стороны изображения */
+}
+
+.product_text,
+.product_text2,
+.product_text3,
+.product_text4 {
+    width: 55%; /* Ширина текста */
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.product_p_text,
+.product_p_text2,
+.product_p_text3,
+.product_p_text4 {
+    width: 55%;
+    height: auto;
+    color: #727271;
+    margin-top: 10px; /* Отступ сверху для параграфа */
+}
+
+.learn_more,
+.learn_more2,
+.learn_more3,
+.learn_more4 {
+    text-decoration: none;
+    color: #0A3D91;
+    padding: 11px;
+    border: 3px solid #0A3D91;
+    font-weight: bold;
+    border-radius: 16px;
+    font-size: 17px;
+    transition: 0.8s;
+    display: block; /* Сделать ссылку блочным элементом для правильного позиционирования */
+    width: fit-content; /* Ширина по содержимому */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.learn_more:hover,
+.learn_more2:hover,
+.learn_more3:hover,
+.learn_more4:hover {
+    color: white;
+    background-color: #0A3D91;
+    border-color: white;
+}
+
+/*Услуги*/
+
+.services {
+    width: 100%;
+    height: 561px;
+    margin-top: 200px;
+    background-image: linear-gradient(rgba(0, 4, 30, 0.6), rgba(0, 4, 30, 0.6)), url(/site/pictures/back_for_service.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.services_text {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+}
+
+.services_text h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.services_text h1::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #0A3D91;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.services_text p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin:30px 0 0 -25px; /* Отступы вокруг параграфа */
+    font-weight: 500;
+    text-align:left;
+    width:113%;
+
+}
+
+
+/*Сервис и тех обслуживание*/
+
+
+.maintenance_text h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: -10px;
+    text-align: center;
+    position: relative;
+}
+
+.maintenance_text h1::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #0A3D91;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.col {
+    margin-top: 20px;
+    width: 540px;
+    height: 270px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.col2 {
+    margin-top: -40px;
+    width: 540px;
+    height: 270px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.col3 {
+    margin-top: -10px;
+    width: 540px;
+    height: 270px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tool_pic {
+    width: 450px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding: 35px;
+}
+
+/*Партнеры*/
+
+#partners-section h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: -10px;
+    text-align: center;
+
+}
+
+#partners-section h1::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 4px;
+    background-color: #0A3D91;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+.map-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition:0.5s ease;
+}
+
+.map-container:hover{
+transform:translateY(-20px);
+box-shadow: 0 7px 9px rgba(0,0,0,0.7);
+transition:0.5s ease;
+}
+
+.partners-text{
+    padding:20px;
+    font-weight:600;
+    font-size:20px;
+    text-align: center;
+    width:70%;
+    margin-left:200px;
+
+}
+
+.partners-map {
+    width: 100%; /* Make the map use all available width of the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/*Контакты*/
+
+.contact_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px; /* добавляем пространство сверху */
+}
+
+.contact_card {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 1000px; /* увеличиваем ширину */
+    text-align: center;
+    margin-bottom: 40px; /* увеличиваем пространство снизу */
+}
+
+.main_header {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom:40px;
+}
+
+.main_header::after {
+    content: '';
+    display: block;
+    width:35%;
+    height: 4px;
+    background-color: #0A3D91;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.contact_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Изменено с center на space-between для большего расстояния между элементами */
+    gap: 150px; /* увеличиваем расстояние между текстом и логотипом */
+    margin-top: 20px; /* Добавляем верхний отступ для нижнего смещения */
+}
+
+.contact_text h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 0; /* Уменьшаем или удаляем верхний отступ если нужно */
+    text-align: left; /* выравниваем текст по левому краю */
+}
+
+.contact_text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left; /* выравниваем текст по левому краю */
+    font-weight: 500;
+}
+
+.email-cart {
+    cursor: pointer;
+    color: blue;
+}
+
+.contact-logo {
+    height: 120px;
+    width: auto;
+    margin-right: 50px;
+}
+
+.contact_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 50px; 
+    margin-top: 20px;
+}
+
+
+.contact_info_block {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.contact_card_info, .contact_card_info2 {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    max-width: 400px; /* увеличиваем ширину карточек */
+    text-align: center;
+    box-shadow: 5px 10px 20px #0A3D91;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+    margin-bottom: 20px;
+    margin-top:-60px;
+    cursor: pointer;
+}
+
+.contact_card_info:hover, .contact_card_info2:hover {
+    transform: translateY(-13px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact_text_info h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact_text_info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    text-align:right;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact_details span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a.email-link, a.phone-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+/*Конец карточек*/
+
+/* Футор */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 50px;
+    width: 100%; /* Ensure footer extends full width */
+    height: 300px; /* Fixed height */
+    display: flex;
+    justify-content: center; /* Center the footer content horizontally */
+    align-items: center; /* Center the footer content vertically */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Wrapper for footer content to manage layout */
+.footer_content {
+    display: flex;
+    width: 1050px; /* Fixed width for footer content */
+    justify-content: space-between; /* Space content evenly */
+    padding-top: 25px;
+    padding-bottom: 40px;
+    text-align: left; /* Text alignment */
+}
+
+/* Individual sections within the footer */
+.footer_section {
+    max-width: 25%; /* Limit width to 25% of the footer_content container */
+    height: 210px; /* Fixed height for each section */
+}
+
+/* Paragraph styling within sections */
+.footer_section p {
+    padding-bottom: 20px;
+    width: 150%; /* Allows text to occupy more than the width of the section */
+}
+
+/* Special styling for phone numbers */
+.footer_section2 {
+    display: flex;
+    flex-direction: column; /* Stack phone and mobile vertically */
+}
+
+/* Styling for phone and mobile number sections */
+.phone, .mobile {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Line container for aligning phone and mobile numbers */
+.line {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.mobile {
+    margin-left: 20px; /* Space between phone and mobile numbers */
+    margin-top: -1px;
+}
+
+/* List styling within footer */
+.footer_section ul {
+    list-style-type: none; /* No bullets */
+    padding: 0;
+}
+
+.footer_section ul li {
+    margin: 10px 0;
+    margin-left: -100px; /* Negative margin for alignment */
+    font-weight: 700; /* Bold font for emphasis */
+}
+
+/* Link styling */
+.footer_link, .email-link-last, .footer a.phone-link, .footer a.mobile-link {
+    color: white;
+    text-decoration: none; /* No underline by default */
+    cursor: pointer;
+}
+
+.email-link-last {
+    text-decoration: underline 0.5px solid white; /* Specific style for email links */
+}
+
+
+/* Footer bottom text styling */
+.footer_bottom {
+    position: absolute;
+    text-align: center;
+    margin-left:50px;
+    padding-top:60px;
+    margin-top:12%;
+}
+
+.footer_section2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line {
+    width:110%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.phone, .mobile {
+    display: block;
+}
+
+.phone-link, .mobile-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1050px) {
+    .footer_content {
+        width: 100%; /* Full width on smaller screens */
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center content */
+    }
+}
+
+    /*форма связи*/
+
+
+    #contactModal {
+        display: none; /* Hide the modal by default */
+        position: fixed;
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust to perfectly center */
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        border-radius: 20px;
+        width: 60%;
+        max-height: 90vh; /* Maximum height to avoid scrolling */
+        opacity: 0; /* Start hidden */
+        transition: opacity 0.5s ease; /* Smooth transition */
+        overflow-y: auto; /* Allows internal scrolling if needed */
+    }
+
+
+    #contactModal.show {
+        display: block; /* Показываем модальное окно */
+        opacity: 1; /* Видимое состояние */
+    }
+
+    #overlay {
+        display: none; /* Скрываем затемнение заднего фона по умолчанию */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        opacity: 0; /* Скрытое состояние */
+        transition: opacity 0.5s ease; /* Плавный переход */
+    }
+
+    #overlay.show {
+        display: block; /* Показываем затемнение заднего фона */
+        opacity: 1; /* Видимое состояние */
+    }
+
+    .fa-times {
+        color: #000000;
+        cursor: pointer;
+        position: absolute; /* Фиксируем крестик закрытия */
+        top: 25px; /* Отступ сверху */
+        right: 10px; /* Отступ справа */
+        padding: 10px; /* Увеличиваем padding */
+    }
+
+    .contact_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contact_card {
+        background-color: #ffffff;
+        padding: 20px;
+        max-width: 1000px; /* увеличиваем ширину */
+        text-align: center;
+        margin-bottom: 20px; /* уменьшаем пространство снизу */
+    }
+
+    .main_header {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+    }
+
+    .main_header::after {
+        content: '';
+        display: block;
+        width: 35%;
+        height: 4px;
+        background-color: #0A3D91;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .contact_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 10px;
+    }
+
+    .contact_text h2 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .contact_text p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .email-cart {
+        cursor: pointer;
+        color: blue;
+    }
+
+    .contact-logo {
+        height: 120px;
+        width: auto;
+        margin-right: 50px;
+    }
+
+    .contact_info_block {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .contact_card_info, .contact_card_info2 {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 15px;
+        padding-left: 80px;
+        padding-right: 80px;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 5px 10px 20px #0A3D91;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+        margin-bottom: 20px;
+        margin-top: -60px;
+        cursor: pointer;
+    }
+
+    .contact_card_info:hover, .contact_card_info2:hover {
+        transform: translateY(-13px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact_text_info h1 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .contact_text_info p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+        text-align: right;
+    }
+
+    .contact_details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .contact_details span {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    a.email-link {
+        color: blue;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a.phone-link {
+        color: black;
+        text-decoration: none;
+    }
+
+    /*конец*/
+
+/*медленное всплытие*/
+.reveal{ 
+    position: relative; 
+    transform:translateY(200px); 
+    opacity:0; 
+    transition:all 2s ease; 
+} 
+.reveal.active{ 
+    transform:translateY(0px); 
+    opacity:1; 
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-left {
+    transform: translateX(-100%);
+}
+
+.reveal-left.active {
+    transform: translateX(0);
+}
+
+.reveal-right {
+    transform: translateX(100%);
+}
+
+.reveal-right.active {
+    transform: translateX(0);
+}
+
+.reveal-bottom {
+    transform: translateY(100%);
+}
+
+.reveal-bottom.active {
+    transform: translateY(0);
+}
+
+/*автоматический переход*/
+section::before {
+    content: "";
+    display: block;
+    height: 200px;
+    margin-top: -200px;
+    visibility: hidden;
+}
+
+html {
+    scroll-padding-top:225px;
+}
+
+#about-section, #products-section, #services-section, #contacts-section {
+    scroll-padding-top: 100px; /* Высота вашей шапки */
+}
+
+#about-section:target, #products-section:target, #services-section:target, #contacts-section:target {
+    animation: scrollDelay 1.5s; /* Задержка в скролле после завершения анимации появления */
+}
+
+@keyframes scrollDelay {
+    from { scroll-behavior: auto; }
+    to { scroll-behavior: smooth; }
+}
+/*Конец*/
+
+/* Adjustments for mobile devices */
+/*хедер мобайл*/
+@media (max-width: 768px) {
+    .logo {
+        width: 120px; /* Adjust size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 10px; /* Keep the logo closer to the top */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+    }
+
+    .contact_us {
+        display: none; /* Hide contact button on mobile */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2%; /* Keep the hamburger menu spaced correctly */
+    }
+
+    #menuToggle {
+        display: block; /* Display the hamburger icon */
+        cursor: pointer;
+    }
+}
+
+/*Карусель мобайл*/
+     /* Медиа-запрос для мобильных устройств */
+     @media (max-width: 768px) {
+        .carusel-img {
+            max-height: 300px; /* Изменение максимальной высоты изображений для мобильных устройств */
+        }
+
+        .text-box, .text-box2, .text-box3 {
+            top: 20%; /* Изменение положения текста для мобильных устройств */
+            font-size: 20px; /* Пример изменения размера текста для мобильных устройств */
+        }
+
+        .btn, .btn2, .btn3 {
+            font-size: 16px; /* Пример изменения размера кнопок для мобильных устройств */
+        }
+    }
+
+    /* Стили для индикаторов */
+    .indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        padding: 2px;
+    }
+
+    .indicator.active {
+        background-color: #555;
+    }
+
+    /* Стили для линии под каруселью */
+    .carusel-line {
+        height: 2px;
+        background-color: rgb(255, 0, 0);
+        position: relative;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        border: none;
+        z-index: 2;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Стили для стрелок  */
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 35px;
+        z-index: 2;
+        color: transparent;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    .arrow:hover {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .arrow-left {
+        left: 0;
+    }
+
+    .arrow-right {
+        right: 0;
+    }
+
+/*О НАС мобайл*/
+@media (max-width: 768px) {
+    .about_us {
+        padding: 20px;
+    }
+
+    .about_us h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .about_us p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+/*Продукция мобайл*/
+@media (max-width: 768px) {
+    .all-products {
+        padding: 20px; /* Внутренний отступ для секции продукции */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрирование по горизонтали */
+    }
+
+    .product,
+    .product2,
+    .product3,
+    .product4 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px; /* Отступ между ячейками продукции */
+    }
+
+    .pro-container,
+    .pro-container2,
+    .pro-container3,
+    .pro-container4 {
+        width: 100%; /* Ширина каждой ячейки продукции */
+        max-width: 100%;
+        padding: 20px; /* Внутренний отступ ячейки */
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.1); /* Тень для ячейки */
+        margin-top: 20px; /* Отступ сверху ячейки */
+        text-align: center; /* Выравнивание текста по центру в ячейке */
+    }
+
+    .product-img,
+    .product-img2,
+    .product-img3,
+    .product-img4 {
+        width: 100%; /* Ширина изображений на мобильных устройствах */
+        max-width: 100%;
+        height: auto; /* Автоматический подбор высоты */
+        margin-bottom: 10px; /* Отступ между изображением и текстом */
+    }
+
+    .product_text,
+    .product_text2,
+    .product_text3,
+    .product_text4 {
+        font-size: 18px; /* Размер заголовка продукта */
+        margin-top: 20px; /* Отступ сверху для заголовка продукта */
+    }
+
+    .product_p_text,
+    .product_p_text2,
+    .product_p_text3,
+    .product_p_text4 {
+        font-size: 14px; /* Размер текста параграфа */
+        margin-top: 10px; /* Отступ сверху для параграфа */
+        text-align: justify; /* Выравнивание текста по ширине */
+    }
+
+    .learn_more,
+    .learn_more2,
+    .learn_more3,
+    .learn_more4 {
+        font-size: 14px; /* Размер кнопки */
+        padding: 8px 16px; /* Отступы вокруг кнопки */
+        display: inline-block; /* Делаем кнопку инлайн-блочным элементом */
+        margin-top: 20px; /* Отступ сверху для кнопки */
+    }
+}
